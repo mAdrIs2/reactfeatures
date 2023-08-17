@@ -1,0 +1,53 @@
+.grid-container {
+  background-color: black;
+  margin: 3rem 3rem 1rem 3rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  display: grid;
+  gap: 10px;
+  grid-template-areas:
+    "header header header header"
+    "section-1 section-1 section-2 section-3"
+    "section-1 section-1 section-4 section-4"
+    "footer footer footer footer";
+    border: 5px solid gray;
+}
+
+.item {
+  background-color: gray;
+  margin: 1rem;
+  text-align: center;
+  padding: 20px;
+  border: 2px solid lightgrey;
+  cursor: pointer;
+}
+
+.item:hover{
+    scale: 1.01;
+  
+}
+
+.header {
+  grid-area: header;
+}
+
+.section-1 {
+  grid-area: section-1;
+}
+
+.section-2 {
+  grid-area: section-2;
+}
+
+.section-3 {
+  grid-area: section-3;
+}
+
+.section-4 {
+  grid-area: section-4;
+}
+
+.footer {
+  grid-area: footer;
+}
